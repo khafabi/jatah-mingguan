@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Jatah Mingguan">
+  <title>Jatah Mingguan</title>
+
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+  <!-- Open Graph-->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jatah-mingguan.netlify.com/">
+  <meta property="og:title" content="Jatah Mingguan">
+  <meta property="og:image" content="img/favicon.png">
+  <meta property="og:description" content="Jatahku minggu ini berapa ya">
+  <meta property="og:site_name" content="Jatah Mingguan">
+  <!-- Next tags are optional but recommended -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#333" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="display-4 text-center mb-1">
+          Jatah Mingguan
+        </h1>
+        <form>
+          <div class="form-group">
+              <h4>Pemasukan Bulanan</h4>
+            <input type="number" class="form-control form-control-lg" id="pemasukanInput" value="0" type="submit" placeholder="Total pemasukan.."
+              required>
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+              <h4>Sisa dari bulan kemarin</h4>
+            <input type="number" class="form-control form-control-lg" id="sisaInput" value="0" type="submit" placeholder="Sisa dari bulan kemarin.."
+          >
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <h4>Pengeluaran Wajib Bulanan</h4>
+            <input type="number"  class="form-control form-control-lg" id="pengeluaranInput" value="0" type="submit" placeholder="Pengeluaran wajib.."
+              required>
+          </div>
+        </form>      
+        
+        <div id="output">
+          <div class="card bg-primary mb-2">
+            <div class="card-block">
+              <h4>Saldo:</h4>
+              <div id="saldoOutput"></div>
+            </div>
+          </div>
+
+          <div class="card bg-info mb-2">
+            <div class="card-block">
+              <h4>Tabungan:</h4>
+              <div id="tabunganOutput"></div>
+            </div>
+          </div>
+
+          <div class="card bg-info mb-2">
+            <div class="card-block">
+              <h4>Budget:</h4>
+              <div id="budgetOutput"></div>
+            </div>
+          </div>
+
+          <div class="card bg-success mb-2">
+            <div class="card-block">
+              <h4>Jatah Mingguan:</h4>
+              <div id="jatahOutput"></div>
+            </div></div>
+          
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
